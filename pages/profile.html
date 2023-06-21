@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script type="text/javascript" src="/welcome.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        window.onload = function() {
+            var formData = JSON.parse(localStorage.getItem("formData"));
+            // Display the form data on the profile page
+            document.getElementById("name").innerHTML = "Name: " + formData.name;
+            document.getElementById("email").innerHTML = "Email: " + formData.email;
+            document.getElementById("phone").innerHTML = "Phone: " + formData.phone;
+            document.getElementById("pickup").innerHTML = "Pickup: " + formData.pickup;
+            document.getElementById("dropoff").innerHTML = "Drop-off: " + formData.dropoff;
+            document.getElementById("date").innerHTML = "Date: " + formData.date;
+            document.getElementById("time").innerHTML = "Time: " + formData.time;
+
+        };
+    </script>
+</head>
+  <body>
+    <div id="nav"></div>
+    <br><br><br>
+    <div class="container">
+        <div class="text-center">
+            <h1>Your rides: <span id="name"></span></h1>
+            <!-- placeholder for date time display-->
+            <h4><span class="text-end" id='date-time'></span>.</h4>
+        </div>
+        <div class="row text-center mt-4">
+            <table class="table table-dark table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Pickup</th>
+                    <th scope="col">Drop-off</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Godlove</td>
+                    <td>Maka</td>
+                    <td>800-123-4567</td>
+                    <td>100 Maka St.</td>
+                    <td>201 Lincoln Rd.</td>
+                    <td>6/22/2023</td>
+                    <td>08:00 AM</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Redwan</td>
+                    <td>Khan</td>
+                    <td>347-123-4567</td>
+                    <td>8400 Corona Blvd.</td>
+                    <td>75 Avenue A</td>
+                    <td>6/23/2023</td>
+                    <td>10:00 AM</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Mamadou</td>
+                    <td>Diallo</td>
+                    <td>347-045-1267</td>
+                    <td>2200 Foster Avn.</td>
+                    <td>1075 Brooklyn Avn.</td>
+                    <td>6/24/2023</td>
+                    <td>05:00 PM</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+    <!-- <p id="name"></p>
+    <p id="email"></p>
+    <p id="phone"></p>
+    <p id="pickup"></p>
+    <p id="dropoff"></p>
+    <p id="date"></p>
+    <p id="time"></p> -->
+    
+    <div id="footer"></div>
+    
+    <script>
+      $(function () {
+        $("#nav").load("/pages/navbar.html");
+        $("#footer").load("/pages/footer.html")
+      });
+
+      //display date time updated every second
+      function refreshTime() {
+        const time = document.getElementById("date-time");
+        const date = new Date().toLocaleString();
+        const formattedString = date.replace(", ", " - ");
+        time.textContent = formattedString;
+      }
+      setInterval(refreshTime, 1000);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

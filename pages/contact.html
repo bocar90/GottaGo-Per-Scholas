@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="/welcome.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+  <body>
+    <div id="nav"></div>
+    <div class="bg-image">
+        <img src="/images/car-bg-image.jpg" id="contact-bg">
+    </div>
+
+    <div class="container contact">
+        <div class="row ">
+          <div class="col-md-7">
+            <p id="intouch">Get in Touch</p>
+            <div class="container">
+              <form>
+                <div class="row">
+                  <div class="col">
+                    <label for="fname">First Name</label>
+                    <input type="text" class="form-control" id="fname" name="firstname" placeholder="Your first name.." required>
+                  </div>
+                  <div class="col">
+                    <label for="lname">Last Name</label>
+                    <input type="text" class="form-control" id="lname" name="lastname" placeholder="Your last name.." required>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your email.." required>
+                  </div>
+                  <div class="col">
+                    <label for="phone">Phone</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your phone number.." required>
+                  </div>
+                </div>
+            
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="guinea">Guinea</option>
+                  <option value="senegal">Senegal</option>
+                  <option value="ghana">Ghana</option>
+                  <option value="guinea">Mali</option>
+                  <option value="bissau">G.Bissau</option>
+                  <option value="cote d'ivoire">Cote d'Ivoire</option>
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="australia">Australia</option>
+                  <option value="mexico">Mexico</option>
+                </select>
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Message..." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit" onclick="message()">
+            
+              </form>
+            </div>
+          </div>
+          <div class="col address">
+            <div>
+                <p id="title">Address</p>
+                <p>1700 Bedford Ave,<br>
+                    Brooklyn, NY 11226, US
+                </p>
+            </div>
+            <div>
+                <p id="title">Phones</p>
+                <p><a href="tel:1-800-123-4567">1-800-123-4567</a> <br> 
+                    <a href="tel:1-800-876-4098">1-800-876-4098</a>
+                </p>
+            </div>
+            <div>
+                <p id="title">E-mails</p>
+                <p>gottago@gmail.com<br>
+                gottago@yahoo.com</p>
+            </div>
+          </div>
+        </div>
+    </div>    
+
+    <div id="map" class="col-md-6 "></div>
+    <div id="footer"></div>
+    
+    <script>
+      // Initialize the map
+      function initMap() {
+        // Create a map object and specify the center and zoom level
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 40.7128, lng: -74.0060}, // New York City coordinates
+          zoom: 12
+        });
+
+        $(function () {
+        $("#nav").load("/pages/navbar.html");
+        $("#footer").load("/pages/footer.html");
+      });
+      }
+  </script> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-eCQi1wYWf6MV6efEA3_QQZ1SuVxKhgA&callback=initMap" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

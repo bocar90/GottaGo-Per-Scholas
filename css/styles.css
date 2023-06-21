@@ -1,0 +1,117 @@
+body{
+    height: 100%;
+    background-color:#ccc;
+}
+ .header, #signup{
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+.footer-text{
+    margin-left: 850px;
+    margin-top: 24px;
+}
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.img-fluid,#loginIcon{
+    border-radius: 12em;
+    height: 200px;
+}
+label{
+    font-weight: bold;
+}
+#forgot{
+    text-align: center;
+}
+.avatar,.welcome{
+    border-radius: 20em;
+    height: 20em;
+}
+
+#map, #contact-bg{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+#intouch{
+    font-size:xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+}
+#title,.satisfaction{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: rgb(58, 56, 56);
+    position: fixed;
+}
+#footer{
+    height: 30px;
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+}
+.img-fluid, .request-service{
+    margin-top: 100px;
+}
+#map,.login{
+    margin-top: 50px;
+}
+#map,.options{
+    margin-bottom: 100px;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], #phone, #email, textarea, select {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contact{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  .address{
+    margin-left: 150px;
+    margin-top: 130px;
+  }
+  .need-a-ride{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 200px;
+  }
