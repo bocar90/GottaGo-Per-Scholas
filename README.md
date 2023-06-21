@@ -49,7 +49,7 @@ If you have any questions or inquiries regarding the GottaGo website, please rea
 We hope you find the GottaGo website useful and enjoy your hassle-free restroom-finding experience!
 
 ## Video Walkthrough
-
 Here's a walkthrough of implemented user stories:
+![ezgif com-optimize](https://github.com/bocar90/GottaGo-Per-Scholas/assets/43213652/161b050c-d293-4648-ac6b-d40b04c53a73)
 
-![ezgif com-optimize](https://github.com/bocar90/GottaGo-Per-Scholas/assets/43213652/23eede11-2928-4589-9a9d-122e9138ea66)
+
