@@ -47,3 +47,9 @@ The GottaGo website is released under the [MIT License](LICENSE). You are free t
 If you have any questions or inquiries regarding the GottaGo website, please reach out to our support team at support@gottago.com.
 
 We hope you find the GottaGo website useful and enjoy your hassle-free restroom-finding experience!
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+![ezgif com-optimize](https://github.com/bocar90/GottaGo-Per-Scholas/assets/43213652/23eede11-2928-4589-9a9d-122e9138ea66)
